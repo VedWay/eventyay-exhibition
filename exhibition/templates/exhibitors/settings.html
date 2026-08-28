@@ -246,9 +246,9 @@
                                                 <input type="hidden" name="tab" value="sponsors">
                                                 <input type="hidden" name="action" value="delete_group">
                                                 <input type="hidden" name="group_id" value="{{ group.pk }}">
-                                                <button type="submit" class="btn btn-delete btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                                                <button type="submit" class="btn btn-delete btn-danger btn-sm" title="{% trans 'Delete' %}" data-toggle="tooltip"><i class="fa fa-trash"></i></button>
                                             </form>
-                                            <button type="button" class="btn btn-primary btn-sm sponsor-group-drag-handle" data-group-drag-handle aria-label="{% trans 'Reorder sponsor group' %}" title="{% trans 'Reorder sponsor group' %}">
+                                            <button type="button" class="btn btn-primary btn-sm sponsor-group-drag-handle" data-group-drag-handle aria-label="{% trans 'Reorder sponsor group' %}" title="{% trans 'Reorder sponsor group' %}" data-toggle="tooltip">
                                                 <i class="fa fa-arrows"></i>
                                             </button>
                                         </div>

@@ -53,7 +53,7 @@
                                     <input type="hidden" name="action" value="delete">
                                     <input type="hidden" name="voucher" value="{{ link.pk }}">
                                     <button type="submit" class="btn btn-delete btn-danger btn-sm"
-                                            {% if link.voucher.redeemed %}disabled title="{% trans "Already redeemed" %}"{% endif %}>
+                                            {% if link.voucher.redeemed %}disabled title="{% trans "Already redeemed" %}" data-toggle="tooltip"{% else %}title="{% trans "Delete" %}" data-toggle="tooltip"{% endif %}>
                                         <i class="fa fa-trash"></i>
                                     </button>
                                 </form>
