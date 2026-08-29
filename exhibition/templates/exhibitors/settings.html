@@ -238,7 +238,9 @@
                                                 type="button"
                                                 class="btn btn-default btn-sm sponsor-group-edit-toggle"
                                                 data-group-editor-toggle="group-editor-{{ group.pk }}"
-                                                aria-expanded="{% if expanded_group_pk == group.pk %}true{% else %}false{% endif %}">
+                                                aria-expanded="{% if expanded_group_pk == group.pk %}true{% else %}false{% endif %}"
+                                                title="{% trans 'Edit sponsor group' %}"
+                                                data-toggle="tooltip">
                                                 <i class="fa fa-angle-down"></i>
                                             </button>
                                             <form action="" method="post" class="sponsor-group-delete-form">
